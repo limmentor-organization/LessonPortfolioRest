@@ -9,7 +9,7 @@ import static org.mockito.Mockito.when;
 
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import io.spring.JacksonCustomizations;
-import io.spring.api.security.WebSecurityConfig;
+import io.spring.defaultImplemented.api.security.WebSecurityConfig;
 import io.spring.application.CommentQueryService;
 import io.spring.application.data.CommentData;
 import io.spring.application.data.ProfileData;
@@ -17,7 +17,7 @@ import io.spring.core.article.Article;
 import io.spring.core.article.ArticleRepository;
 import io.spring.core.comment.Comment;
 import io.spring.core.comment.CommentRepository;
-import io.spring.core.user.User;
+import io.spring.defaultImplemented.core.user.User;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;

@@ -4,13 +4,13 @@ import com.netflix.graphql.dgs.DgsComponent;
 import com.netflix.graphql.dgs.DgsData;
 import com.netflix.graphql.dgs.InputArgument;
 import graphql.execution.DataFetcherResult;
-import io.spring.api.exception.InvalidAuthenticationException;
-import io.spring.application.user.RegisterParam;
-import io.spring.application.user.UpdateUserCommand;
-import io.spring.application.user.UpdateUserParam;
-import io.spring.application.user.UserService;
-import io.spring.core.user.User;
-import io.spring.core.user.UserRepository;
+import io.spring.defaultImplemented.api.exception.InvalidAuthenticationException;
+import io.spring.defaultImplemented.application.user.RegisterParam;
+import io.spring.defaultImplemented.application.user.UpdateUserCommand;
+import io.spring.defaultImplemented.application.user.UpdateUserParam;
+import io.spring.defaultImplemented.application.user.UserService;
+import io.spring.defaultImplemented.core.user.User;
+import io.spring.defaultImplemented.core.user.UserRepository;
 import io.spring.graphql.DgsConstants.MUTATION;
 import io.spring.graphql.exception.GraphQLCustomizeExceptionHandler;
 import io.spring.graphql.types.CreateUserInput;
@@ -74,7 +74,7 @@ public class UserMutation {
         || authentication.getPrincipal() == null) {
       return null;
     }
-    io.spring.core.user.User currentUser = (io.spring.core.user.User) authentication.getPrincipal();
+    User currentUser = (User) authentication.getPrincipal();
     UpdateUserParam param =
         UpdateUserParam.builder()
             .username(updateUserInput.getUsername())

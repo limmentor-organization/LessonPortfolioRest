@@ -4,11 +4,11 @@ import com.netflix.graphql.dgs.DgsComponent;
 import com.netflix.graphql.dgs.DgsData;
 import graphql.execution.DataFetcherResult;
 import graphql.schema.DataFetchingEnvironment;
-import io.spring.api.exception.ResourceNotFoundException;
-import io.spring.application.UserQueryService;
-import io.spring.application.data.UserData;
-import io.spring.application.data.UserWithToken;
-import io.spring.core.service.JwtService;
+import io.spring.defaultImplemented.api.exception.ResourceNotFoundException;
+import io.spring.defaultImplemented.application.UserQueryService;
+import io.spring.defaultImplemented.application.data.UserData;
+import io.spring.defaultImplemented.application.data.UserWithToken;
+import io.spring.defaultImplemented.core.service.JwtService;
 import io.spring.graphql.DgsConstants.QUERY;
 import io.spring.graphql.DgsConstants.USERPAYLOAD;
 import io.spring.graphql.types.User;
@@ -33,7 +33,7 @@ public class MeDatafetcher {
         || authentication.getPrincipal() == null) {
       return null;
     }
-    io.spring.core.user.User user = (io.spring.core.user.User) authentication.getPrincipal();
+    io.spring.defaultImplemented.core.user.User user = (io.spring.defaultImplemented.core.user.User) authentication.getPrincipal();
     UserData userData =
         userQueryService.findById(user.getId()).orElseThrow(ResourceNotFoundException::new);
     UserWithToken userWithToken = new UserWithToken(userData, authorization.split(" ")[1]);
@@ -49,7 +49,7 @@ public class MeDatafetcher {
   @DgsData(parentType = USERPAYLOAD.TYPE_NAME, field = USERPAYLOAD.User)
   public DataFetcherResult<User> getUserPayloadUser(
       DataFetchingEnvironment dataFetchingEnvironment) {
-    io.spring.core.user.User user = dataFetchingEnvironment.getLocalContext();
+    io.spring.defaultImplemented.core.user.User user = dataFetchingEnvironment.getLocalContext();
     User result =
         User.newBuilder()
             .email(user.getEmail())

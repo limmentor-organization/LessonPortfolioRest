@@ -1,6 +1,6 @@
 package io.spring.graphql;
 
-import io.spring.core.user.User;
+import io.spring.defaultImplemented.core.user.User;
 import java.util.Optional;
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -13,7 +13,7 @@ public class SecurityUtil {
         || authentication.getPrincipal() == null) {
       return Optional.empty();
     }
-    io.spring.core.user.User currentUser = (io.spring.core.user.User) authentication.getPrincipal();
+    User currentUser = (User) authentication.getPrincipal();
     return Optional.of(currentUser);
   }
 }

@@ -2,7 +2,7 @@ package io.spring.core.service;
 
 import io.spring.core.article.Article;
 import io.spring.core.comment.Comment;
-import io.spring.core.user.User;
+import io.spring.defaultImplemented.core.user.User;
 
 public class AuthorizationService {
   public static boolean canWriteArticle(User user, Article article) {

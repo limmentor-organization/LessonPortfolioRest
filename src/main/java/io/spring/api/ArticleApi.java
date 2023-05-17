@@ -1,7 +1,7 @@
 package io.spring.api;
 
-import io.spring.api.exception.NoAuthorizationException;
-import io.spring.api.exception.ResourceNotFoundException;
+import io.spring.defaultImplemented.api.exception.NoAuthorizationException;
+import io.spring.defaultImplemented.api.exception.ResourceNotFoundException;
 import io.spring.application.ArticleQueryService;
 import io.spring.application.article.ArticleCommandService;
 import io.spring.application.article.UpdateArticleParam;
@@ -9,7 +9,7 @@ import io.spring.application.data.ArticleData;
 import io.spring.core.article.Article;
 import io.spring.core.article.ArticleRepository;
 import io.spring.core.service.AuthorizationService;
-import io.spring.core.user.User;
+import io.spring.defaultImplemented.core.user.User;
 import java.util.HashMap;
 import java.util.Map;
 import javax.validation.Valid;
