@@ -1,9 +1,9 @@
 package io.spring.application;
 
 import io.spring.application.data.ProfileData;
-import io.spring.application.data.UserData;
-import io.spring.core.user.User;
-import io.spring.infrastructure.mybatis.readservice.UserReadService;
+import io.spring.defaultImplemented.application.data.UserData;
+import io.spring.defaultImplemented.core.user.User;
+import io.spring.defaultImplemented.infrastructure.mybatis.readservice.UserReadService;
 import io.spring.infrastructure.mybatis.readservice.UserRelationshipQueryService;
 import java.util.Optional;
 import lombok.AllArgsConstructor;

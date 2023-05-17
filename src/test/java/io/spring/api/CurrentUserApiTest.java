@@ -8,10 +8,10 @@ import static org.mockito.Mockito.when;
 
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import io.spring.JacksonCustomizations;
-import io.spring.api.security.WebSecurityConfig;
-import io.spring.application.UserQueryService;
-import io.spring.application.user.UserService;
-import io.spring.core.user.User;
+import io.spring.defaultImplemented.api.security.WebSecurityConfig;
+import io.spring.defaultImplemented.application.UserQueryService;
+import io.spring.defaultImplemented.application.user.UserService;
+import io.spring.defaultImplemented.core.user.User;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;

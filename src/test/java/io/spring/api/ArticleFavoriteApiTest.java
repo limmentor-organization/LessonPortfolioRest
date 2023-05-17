@@ -9,7 +9,7 @@ import static org.mockito.Mockito.when;
 
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import io.spring.JacksonCustomizations;
-import io.spring.api.security.WebSecurityConfig;
+import io.spring.defaultImplemented.api.security.WebSecurityConfig;
 import io.spring.application.ArticleQueryService;
 import io.spring.application.data.ArticleData;
 import io.spring.application.data.ProfileData;
@@ -18,7 +18,7 @@ import io.spring.core.article.ArticleRepository;
 import io.spring.core.article.Tag;
 import io.spring.core.favorite.ArticleFavorite;
 import io.spring.core.favorite.ArticleFavoriteRepository;
-import io.spring.core.user.User;
+import io.spring.defaultImplemented.core.user.User;
 import java.util.Arrays;
 import java.util.Optional;
 import java.util.stream.Collectors;

@@ -3,7 +3,7 @@ package io.spring;
 import io.spring.application.data.ArticleData;
 import io.spring.application.data.ProfileData;
 import io.spring.core.article.Article;
-import io.spring.core.user.User;
+import io.spring.defaultImplemented.core.user.User;
 import java.util.ArrayList;
 import java.util.Arrays;
 import org.joda.time.DateTime;

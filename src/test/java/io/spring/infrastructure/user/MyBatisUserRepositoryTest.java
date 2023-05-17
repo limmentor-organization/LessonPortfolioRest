@@ -1,10 +1,10 @@
 package io.spring.infrastructure.user;
 
-import io.spring.core.user.FollowRelation;
-import io.spring.core.user.User;
-import io.spring.core.user.UserRepository;
+import io.spring.defaultImplemented.core.user.FollowRelation;
+import io.spring.defaultImplemented.core.user.User;
+import io.spring.defaultImplemented.core.user.UserRepository;
+import io.spring.defaultImplemented.infrastructure.repository.MyBatisUserRepository;
 import io.spring.infrastructure.DbTestBase;
-import io.spring.infrastructure.repository.MyBatisUserRepository;
 import java.util.Optional;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;

@@ -5,7 +5,7 @@ import io.spring.application.Page;
 import io.spring.application.article.ArticleCommandService;
 import io.spring.application.article.NewArticleParam;
 import io.spring.core.article.Article;
-import io.spring.core.user.User;
+import io.spring.defaultImplemented.core.user.User;
 import java.util.HashMap;
 import javax.validation.Valid;
 import lombok.AllArgsConstructor;
